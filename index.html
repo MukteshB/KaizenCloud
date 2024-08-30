@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Distributor - Muerati</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Muerati</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Visit Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h2>Welcome to Muerati</h2>
+            <p>Your trusted partner for Automotive, Luxury, Commercial, Construction, and Industrial vehicles.</p>
+        </section>
+
+        <section class="visit-us">
+            <h2>Plan Your Visit</h2>
+            <form action="submit_form.php" method="POST">
+                <!-- Name Input -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Mr./Ms." required>
+
+                <!-- Purpose Dropdown -->
+                <label for="purpose">Purpose:</label>
+                <select id="purpose" name="purpose" required>
+                    <option value="buy">Buy a New Car</option>
+                    <option value="service">Service Your Car</option>
+                    <option value="body_shop">Body shop repairs</option>
+                    <option value="accessories">Buy Accessories</option>
+                    <option value="insurance_renewal">Insurance Renewal</option>
+                </select>
+
+                <!-- Brand Dropdown -->
+                <label for="brand">Brand:</label>
+                <select id="brand" name="brand" required>
+                    <option value="toyota">Toyota</option>
+                    <option value="lexus">Lexus</option>
+                    <option value="kia">Kia</option>
+                    <option value="ford">Ford</option>
+                    <option value="audi">Audi</option>
+                    <option value="porsche">Porsche</option>
+                    <option value="man">MAN</option>
+                    <option value="hino">Hino</option>
+                    <option value="komatsu">Komatsu</option>
+                </select>
+
+                <!-- Model Input -->
+                <label for="model">Model:</label>
+                <input type="text" id="model" name="model" placeholder="Enter model" required>
+
+                <!-- City Dropdown -->
+                <label for="city">City:</label>
+                <select id="city" name="city" required>
+                    <option value="city1">City1</option>
+                    <option value="city2">City2</option>
+                    <option value="city3">City3</option>
+                    <option value="city4">City4</option>
+                    <option value="city5">City5</option>
+                    <option value="city6">City6</option>
+                </select>
+
+                <!-- Branch Dropdown -->
+                <label for="branch">Branch:</label>
+                <select id="branch" name="branch" required>
+                    <option value="main_branch">Main Branch</option>
+                    <option value="sub_branch">Sub Branch</option>
+                    <option value="satalight_workshop">Satalight Workshop</option>
+                </select>
+
+                <!-- Mobile Number Input -->
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Muerati. All rights reserved.</p>
+    </footer>
+</body>
+</html>
